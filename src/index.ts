@@ -7,7 +7,7 @@ import {
     SortingParams
 } from './types'
 
-export const get_hotel_listings = async (
+export const get_hotel_listings = (
     auth: {
         username: string
         password: string

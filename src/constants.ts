@@ -402,3 +402,47 @@ export const supported_locales = [
         ]
     }
 ] as const
+
+export const conventional_lodging_types = [
+    'Unknown',
+    'Hotel',
+    'Motel',
+    'Hotel Resort',
+    'Inn',
+    'Bed & Breakfast',
+    'Guest House',
+    'All-Inclusive',
+    'Hostel / Backpacker Accommodation',
+    'Ranch',
+    'Lodge',
+    'Ryokan',
+    'Tree House',
+    'Riad',
+    'Hostel (Budget Hotel)',
+    'Country House',
+    'Pension',
+    'Pousada (Portugal)',
+    'Pousada (Brazil)',
+    'TownHouse',
+    'Castle',
+    'Safari / Tentalow',
+    'Palace',
+    'Agritourism',
+    'Cruise',
+    'Holiday Park'
+] as const
+
+export const vacation_rental_types = [
+    'Condo',
+    'Cabin',
+    'Chalet',
+    'Cottage',
+    'Villa',
+    'Apartment',
+    'Private Vacation Home',
+    'House Boat',
+    'Apart-hotel',
+    'Condominium Resort',
+    'Caravan Park',
+    'Residence'
+] as const
