@@ -1,4 +1,3 @@
-import { supported_currencies } from './constants'
 import {
     ContentDetailParams,
     FilteringParams,
@@ -15,12 +14,12 @@ export const get_hotel_listings = (
     queryObj: SearchLatLng & SearchParams & ContentDetailParams & FilteringParams & SortingParams
 ) => {
     const payload = {
-        method: 'get',
-        url: 'https://apim.expedia.com/hotels/listings',
+        method: 'get' as const,
+        url: 'https://apim.expedia.com/hotels/listings' as const,
         params: queryObj,
         headers: {
             Key: auth.username,
-            Accept: 'application/vnd.exp-hotel.v3+json',
+            Accept: 'application/vnd.exp-hotel.v3+json' as const,
             'Partner-Transaction-Id': auth.username
         },
         auth
