@@ -9,7 +9,7 @@ export type SearchParams = {
     checkIn?: string //2022-09-19
     checkOut?: string //2022-09-20
     locale?: string
-    currency?: typeof supported_currencies
+    currency?: typeof supported_currencies[number]
     // 'room#.adults': number;
     // 'room#.childAges': string; // '2,3'
     source?: 'browser' | 'mobileapp'
