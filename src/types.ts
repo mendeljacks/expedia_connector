@@ -20,8 +20,8 @@ export type ContentDetailParams = {
     links?: string //WD,WS,AD,WEB,API
 }
 export type FilteringParams = {
-    minStarRating?: number
-    maxStarRating?: number
+    minStarRating?: string
+    maxStarRating?: string
     limit?: number
     queryText?: string
     availOnly?: boolean
