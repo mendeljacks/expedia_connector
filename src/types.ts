@@ -14,6 +14,10 @@ export type SearchParams = {
     // 'room#.childAges': string; // '2,3'
     source: 'browser' | 'mobileapp'
 }
+export type Auth = {
+    username: string
+    password: string
+}
 export type ContentDetailParams = {
     contentDetails: 'lowest' | 'low' | 'medium' | 'high'
     allRoomTypes: boolean

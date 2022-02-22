@@ -1,4 +1,5 @@
 import {
+    Auth,
     ContentDetailParams,
     FilteringParams,
     SearchLatLng,
@@ -7,10 +8,7 @@ import {
 } from './types'
 
 export const get_hotel_listings = (
-    auth: {
-        username: string
-        password: string
-    },
+    auth: Auth,
     queryObj: SearchLatLng & SearchParams & ContentDetailParams & FilteringParams & SortingParams
 ) => {
     const payload = {
