@@ -1,16 +1,6 @@
-import {
-    Auth,
-    ContentDetailParams,
-    FilteringParams,
-    SearchLatLng,
-    SearchParams,
-    SortingParams
-} from './types'
+import { Auth, HotelListingsQueryObj } from './types'
 
-export const get_hotel_listings = (
-    auth: Auth,
-    queryObj: SearchLatLng & SearchParams & ContentDetailParams & FilteringParams & SortingParams
-) => {
+export const get_hotel_listings = (auth: Auth, queryObj: HotelListingsQueryObj) => {
     const payload = {
         method: 'get' as const,
         url: 'https://apim.expedia.com/hotels/listings' as const,
